@@ -158,7 +158,7 @@ header a {
 #mainImage {
     background-image: linear-gradient(var(--color-gradient-Img1),
             var(--color-gradient-Img2)),
-        url(./resources/images/header.jpg);
+        url(../images/header.jpg);
 
     color: var(--color-hder-mainImg);
 
@@ -328,31 +328,31 @@ header a {
 }
 
 .photo1 {
-    background-image: url(/resources/images/galerie/femmes-zanzibar.jpg);
+    background-image: url(../images/galerie/femmes-zanzibar.jpg);
 
     width: 325px;
 }
 
 .photo2 {
-    background-image: url(/resources/images/galerie/plage-zanzibar.jpg);
+    background-image: url(../images/galerie/plage-zanzibar.jpg);
 
     width: 625px;
 }
 
 .photo3 {
-    background-image: url(/resources/images/galerie/epices-zanzibar.jpg);
+    background-image: url(../images/galerie/epices-zanzibar.jpg);
 
     width: 380px;
 }
 
 .photo4 {
-    background-image: url(/resources/images/galerie/village-pecheur-zanzibar.jpg);
+    background-image: url(../images/galerie/village-pecheur-zanzibar.jpg);
 
     width: 230px;
 }
 
 .photo5 {
-    background-image: url(/resources/images/galerie/safari-blue.jpg);
+    background-image: url(../images/galerie/safari-blue.jpg);
 
     width: 310px;
 }
@@ -371,7 +371,7 @@ header a {
 #commentSection {
     background-image: linear-gradient(var(--color-gradient-Img1),
             var(--color-gradient-Img2)),
-        url(/resources/images/the-paysage.jpg);
+        url(../images/the-paysage.jpg);
 
     height: 350px;
 
