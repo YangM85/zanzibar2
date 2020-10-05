@@ -1,0 +1,639 @@
+/* DOCUMENT INFORMATION
+
+        Document : Zanzibar Thème
+        Author : YANG M.
+        Version : 1.0.0
+
+    FONTS
+        font-family: 'Lato', sans-serif; (300, 400, 700)
+                     'Sanchez', serif; (400)
+                     'Warnes', cursive; (400)
+
+    COLORS
+        color : bleu ciel : #43d9fe, #0ce0f5(card), #03a9d1(button), rgb(0, 255, 255)(background)
+                rouge : #da3b28
+                gris : #5f5f5f
+
+
+    CSS SUMMARY
+
+============================================================== */
+
+
+/* VARIABLE
+=============================== */
+
+:root {
+    /* Size Ratio */
+    --ratio-font: 62.5%;
+    --ratio-height: 62.5%;
+    /* Size Section */
+
+
+    /* Color Font */
+    --color-all-font: #5f5f5f;
+    --color-hder-mainImg: white;
+
+    /* Color Button */
+    --color-button1: white;
+    --color-button1-text: #39c4dd;
+    --color-button2: rgba(0, 0, 0, 0);
+    --color-button2-text: white;
+
+    /* Color Section */
+    --color-navBar: black;
+    --color-gradient-Img1: rgba(0, 255, 106, 0.4);
+    --color-gradient-Img2: rgba(0, 153, 255, 0.4);
+}
+
+/* GLOBAL
+=============================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: var(--ratio-font);
+    color: var(--color-all-font);
+    height: var(--ratio-height);
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+h4:after {
+    display: block;
+    background-color: #43d9fe;
+    content: " ";
+    height: 3px;
+    width: 80px;
+    margin: 40px auto;
+    margin-top: 10px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+i {
+    color: black;
+}
+
+/* :Hover */
+nav li:hover,
+a:hover,
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: orange;
+}
+
+/* Background image alignement */
+#mainImage,
+.photoBox,
+#commentSection {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR
+=============================== */
+
+#navBar {
+    background-color: var(--color-navBar);
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Warnes', cursive;
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-hder-mainImg);
+}
+
+/* MAIN IMAGE
+=============================== */
+
+#mainImage {
+    background-image: linear-gradient(var(--color-gradient-Img1),
+            var(--color-gradient-Img2)),
+        url(/resources/images/header.jpg);
+
+    color: var(--color-hder-mainImg);
+
+    height: 580px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainImageText {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.mainImageText h2,
+.mainImageText h3 {
+    color: var(--color-hder-mainImg);
+}
+
+.mainImageText h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.mainImageText h3 {
+    font-size: 2.65rem;
+    font-weight: 300;
+}
+
+.mainImageText p {
+    font-size: 0.57rem;
+
+    margin-top: 5px;
+}
+
+.button1,
+.button2 {
+    font-size: 0.77rem;
+    font-weight: 500;
+
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px 20px;
+}
+
+.button1 {
+    background-color: var(--color-button1);
+    color: var(--color-button1-text);
+}
+
+.button2 {
+    background-color: var(--color-button2);
+    color: var(--color-button2-text);
+}
+
+/* QSN
+=============================== */
+
+#qsnSection {
+    padding-bottom: 20px;
+}
+
+.qsnArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.qsnArticle img {
+    height: 530px;
+    width: auto;
+
+    margin-right: 20px;
+}
+
+.qsnText {
+    display: flex;
+    flex-direction: column;
+}
+
+.qsnBox {
+    width: 480px;
+}
+
+.qsnText i {
+    font-size: 2rem;
+    color: red;
+
+    padding-right: 30px;
+}
+
+.qsnBox h5 {
+    display: flex;
+}
+
+.qsnBox p {
+    margin-left: 63px;
+    margin-bottom: 20px;
+}
+
+/* ISLAND
+=============================== */
+
+#isldSection {
+    background-color: rgb(0, 255, 255);
+
+    padding-bottom: 50px;
+}
+
+.isldArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.isldBox {
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    margin: 10px 15px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isldBox img {
+    height: 200px;
+    width: auto;
+}
+
+.isldBox p {
+    width: 250px;
+}
+
+/* PHOTOS
+=============================== */
+
+#photoSection {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+}
+
+.photoArticle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photoBox {
+    position: relative;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+
+    margin: 13px;
+
+    height: 260px;
+}
+
+.photo1 {
+    background-image: url(/resources/images/galerie/femmes-zanzibar.jpg);
+
+    width: 325px;
+}
+
+.photo2 {
+    background-image: url(/resources/images/galerie/plage-zanzibar.jpg);
+
+    width: 625px;
+}
+
+.photo3 {
+    background-image: url(/resources/images/galerie/epices-zanzibar.jpg);
+
+    width: 380px;
+}
+
+.photo4 {
+    background-image: url(/resources/images/galerie/village-pecheur-zanzibar.jpg);
+
+    width: 230px;
+}
+
+.photo5 {
+    background-image: url(/resources/images/galerie/safari-blue.jpg);
+
+    width: 310px;
+}
+
+.photoBox h6 {
+    position: absolute;
+    color: white;
+
+    left: 10px;
+    bottom: 10px;
+}
+
+/* COMMENT
+=============================== */
+
+#commentSection {
+    background-image: linear-gradient(var(--color-gradient-Img1),
+            var(--color-gradient-Img2)),
+        url(/resources/images/the-paysage.jpg);
+
+    height: 350px;
+
+    color: white;
+}
+
+#commentSection h4:after {
+    background-color: white;
+}
+
+.commentArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.commentBox {
+    font-style: italic;
+    font-weight: 700;
+
+    width: 300px;
+    padding: 0 10px;
+}
+
+.commentBox i {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.commentBox img {
+    height: 50px;
+    width: auto;
+
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.commentBox div {
+    display: flex;
+    align-items: center;
+}
+
+cite {
+    font-size: 0.7rem;
+}
+
+/* SEJOUR
+=============================== */
+
+#sejourSection {
+    height: 550px;
+}
+
+.sejourArticle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sejourBox {
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    height: 320px;
+    width: 400px;
+}
+
+.sejourBoxBlue {
+    background-color: rgb(0, 255, 255);
+    color: white;
+}
+
+.sejourBox h5 {
+    font-weight: 700;
+    color: black;
+}
+
+.sejourBoxTop {
+    border-bottom: 1px solid rgb(201, 201, 201);
+    height: 70px;
+}
+
+.sejourTime {
+    font-family: 'Sanchez', serif;
+    font-size: 1.8rem;
+}
+
+.price {
+    padding-top: 3px;
+}
+
+.sejourBoxBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.sejourBox i {
+    padding-right: 10px;
+}
+
+.sejourBoxBlue i {
+    color: white;
+}
+
+.sejourBox button {
+    width: 120px;
+    padding: 5px 0;
+
+    color: white;
+    border: #03a9d1;
+    background-color: #03a9d1;
+
+    align-self: center;
+}
+
+/* CONTACT
+=============================== */
+
+#contact {
+    margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactBox {
+    width: 540px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneEmail {
+    margin-top: 5px;
+}
+
+.phoneEmail i {
+    padding-right: 5px;
+}
+
+.phoneEmail span {
+    margin-right: 50px;
+}
+
+form {
+    display: inline;
+}
+
+.form {
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    padding: 15px;
+}
+
+.messageBox {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    font-size: 2rem;
+}
+
+.messageButton {
+    color: white;
+    background-color: #03a9d1;
+    font-family: 'Lato', sans-serif;
+    border-radius: 7px;
+    width: 100px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+/* FOOTER
+=============================== */
+
+footer {
+    color: white;
+    background-color: black;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* POINT DE RUPTURE MEDIAQUERIES
+================================================================ */
+
+@media screen and (max-width: 1320px) {
+
+    body {
+        font-size: 20%;
+    }
+
+    .sejourBox h5 {
+        font-size: 1.2rem;
+    }
+
+    .sejourTime {
+        font-size: 1rem;
+    }
+
+    #contact {
+        padding-top: 350px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    #commentSection {
+        padding-bottom: 150px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+
+    #contact {
+        padding-top: 700px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    #navBar {
+        fle
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    h2,
+    h3 {
+        font-size: 1rem;
+    }
+
+    .qsnArticle img {
+        height: 400px;
+    }
+
+    #commentSection {
+        padding-bottom: 250px;
+
+    }
+
+}
