@@ -121,14 +121,20 @@ button:hover {
 /* NAVBAR
 =============================== */
 
+header {
+    background-color: var(--color-navBar);
+}
+
 #navBar {
     background-color: var(--color-navBar);
     height: 40px;
 
+    margin: 0 auto;
+    width: 80%;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 h1 {
@@ -172,7 +178,7 @@ header a {
 
 .mainImageText {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
 }
 
 .mainImageText h2,
@@ -615,11 +621,17 @@ footer {
 @media screen and (max-width: 650px) {
 
     #navBar {
-        fle
+        flex-direction: column;
+        padding-bottom: 70px;
     }
 
     ul {
         flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 0;
     }
 
     h2,
