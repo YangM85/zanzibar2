@@ -158,7 +158,7 @@ header a {
 #mainImage {
     background-image: linear-gradient(var(--color-gradient-Img1),
             var(--color-gradient-Img2)),
-        url(/resources/images/header.jpg);
+        url(./resources/images/header.jpg);
 
     color: var(--color-hder-mainImg);
 
